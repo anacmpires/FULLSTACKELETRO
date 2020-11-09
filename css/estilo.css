@@ -1,0 +1,112 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.menu{
+    background-color: #FF0000;
+    text-align: center;
+}
+.menu a{
+    color: white;
+    text-decoration: none;
+    margin: 8%;
+}
+
+
+.preco{
+    color: red;
+    font-size: 20px;
+} 
+
+.categorias{
+    width: 20%;
+    height: 20%; 
+}
+
+.produtos{
+    margin-top: -9%;
+    margin-left: 15%;
+    display: inline-table;
+}
+.box_produto{
+    margin: 5px;
+    text-align: center;
+    width: 24%;
+    display: inline-block;
+} 
+
+.filial{
+    display: inline-flex;
+    width: 85%;
+    margin-top: 0%;
+    margin-left: 15%;
+    margin-bottom: 0%;
+}
+
+.local{
+    width: 100%;
+    font-size: 18px;
+}
+
+.contato{
+    display: inline-flex;
+    margin-top: 5%;
+    margin-left: 30%;
+    margin-right: 5%;
+    padding: 20px;
+}
+
+#main{
+    margin-top: 3%;
+}
+
+#email{
+    width: 50%;
+    display: inline-flex;
+}
+
+#iconemail{
+    width: 50px;
+    margin-right: 10px;
+}
+
+#wpp{
+    width: 50%;
+    margin-left: 150px;
+    display: inline-flex;
+}
+#iconwpp{
+    width: 50px;
+    margin-right: 10px;
+}
+
+#formContato{
+    margin-top: 2%;
+    margin-left: 33%;
+    margin-bottom: 10%;
+}
+
+#inputName{
+    width: 45%;
+}
+
+#txtmsg{
+    width: 45%;
+}
+
+#formas_pagamento{
+    color: red;
+}
+
+#rodape{
+    text-align: center;
+    margin-top: 5%;
+}
+
+#imgRodape{
+    width: 30%;
+}
+
+#pRodape{
+    margin: 30px;
+}

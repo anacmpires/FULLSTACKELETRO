@@ -1,3 +1,7 @@
+<?php
+    include_once('conexao.php')
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
@@ -7,16 +11,22 @@
     </head>
     <body>
         <!--Menu-->
-        <nav class="menu">
-            <a href="index.html"><img width="100px"  src="./imagens/logo.PNG " alt="Full Stack Eletro" width="100px"></a>
-            <a href="produtos.html">Nossos Produtos</a>
-            <a href="loja.html">Nossas Lojas</a>
-            <a href="contato.html">Fale conosco</a>
-        </nav>
+        <?php
+        include_once('menu.html')
+        ?>
 
         <main id="main">
+        <header>   
         <h1>Fale conosco</h1>
+        </header>
         <hr>
+
+        <form id="formContato" method="post" action="">
+        <input type="text" name="nome" placeholder="Nome"><br>
+        <input type="text" name="msg" placeholder="Mensagem"><br>
+        <br>
+        <input type="submit" name="submit" value="Enviar">
+        </form>
 
         <section class="contato">
         <div id="email">
@@ -29,14 +39,24 @@
         </div>
     </section>
 
-            <form id="formContato">
-                <h4>Nome: </h4>
-                <input id="inputName" type="text">
-                <h4>Mensagem: </h4>
-                <textarea id="txtmsg"></textarea>
+    <br>
 
-                <input type="submit" value="Enviar">
-            </form>
+    <?php
+        $sql = "select * from comentarios";
+        $result = $conn->query($sql);
+
+        if($result->num_rows > 0){
+            while($rows = $result->fetch_assoc()){
+                echo "<hr>";
+                echo "Data: ", $rows['data']. "<br>";
+                echo "Nome: ", $rows['nome']. "<br>";
+                echo "Mensagem: ", $rows['msg']. "<br>";
+            }
+                echo "<hr>";
+        } else {
+            echo "Nenhum comentário ainda!";
+        }
+    ?>
         </main>
        
         <footer id="rodape">

@@ -2,6 +2,24 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 
+input{
+    padding: 0 10px;
+    margin: 5px;
+    width: 40%;
+    height: 30px;
+    border: 1px solid;
+    border-radius: 10px;
+    font: 16px Roboto, sans-serif;
+    outline: none;
+}
+
+header{
+    text-align: center;
+}
+
+input[type=submit]{
+    width: 42%;
+}
 .menu{
     background-color: #FF0000;
     text-align: center;
@@ -12,13 +30,12 @@ body{
     margin: 8%;
 }
 
-
 .preco{
     color: red;
     font-size: 20px;
 } 
 
-.categorias{
+.categoria{
     width: 20%;
     height: 20%; 
 }
@@ -40,7 +57,7 @@ body{
     width: 85%;
     margin-top: 0%;
     margin-left: 15%;
-    margin-bottom: 0%;
+    margin-bottom: 10%;
 }
 
 .local{
@@ -50,9 +67,10 @@ body{
 
 .contato{
     display: inline-flex;
-    margin-top: 5%;
-    margin-left: 30%;
+    margin-top: 3%;
+    margin-left: 32%;
     margin-right: 5%;
+    margin-bottom: 2%;
     padding: 20px;
 }
 
@@ -61,7 +79,7 @@ body{
 }
 
 #email{
-    width: 50%;
+    width: 34%;
     display: inline-flex;
 }
 
@@ -82,16 +100,18 @@ body{
 
 #formContato{
     margin-top: 2%;
-    margin-left: 33%;
+    margin-left: 36.1%;
+}
+
+#form_pedido{
+    margin-bottom: 1%;
+    text-align: center;
+}
+
+#formPedidos{
+    text-align: center;
+    margin-top: 3%;
     margin-bottom: 10%;
-}
-
-#inputName{
-    width: 45%;
-}
-
-#txtmsg{
-    width: 45%;
 }
 
 #formas_pagamento{

@@ -1,3 +1,7 @@
+<?php
+    include_once('conexao.php')
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
@@ -7,16 +11,16 @@
     </head>
     <body>
         <!--Menu-->
-        <nav class="menu">
-            <a href="index.html"><img width="100px"  src="./imagens/logo.PNG " alt="Full Stack Eletro" width="100px"></a>
-            <a href="produtos.html">Nossos Produtos</a>
-            <a href="loja.html">Nossas Lojas</a>
-            <a href="contato.html">Fale conosco</a>
-        </nav>
-        
+        <?php
+        include_once('menu.html')
+        ?>
+
         <main id="main">
+        <header>
         <h1>Lojas</h1>
+        </header>
         <hr>
+
         <section class="filial">
             <div class="local">
             <h3>Rio de Janeiro</h3>
@@ -43,12 +47,6 @@
             </div>
         </section>
 
-        </section>
-        <!--<table border=0 width="100%" cellpadding="20">
-            
-                <td width="33%">
-        
-        </table>-->
         </main>
         
         <footer id="rodape">

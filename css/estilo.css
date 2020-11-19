@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+header{
+    text-align: center;
+}
+
+.colBox_produto{
+   display: inline-table;
+}
+
+.box_produto{
+    text-align: center;
+    font-size: 16px;
+  
+}
+
+.descricao{
+    margin-top: 5%;
+}
+
+#preço_antigo{
+    text-decoration: line-through;
+}
+#imgProdutos {
+    height: 120px;
+    transition: .5s;
+}
+
+#imgProdutos:hover{
+    padding: 0;
+    transform: scale(2, 2);
+    transition: .5s;
+    cursor: pointer;
+    
+}
+
+.preco{
+    color: red;
+    font-size: 18px;
+}
+
+#menu{
+    background-color: red;
+}
+
+#form_pedido{
+    text-align: center; 
+    margin-bottom: 2%;  
+}
+
+#formContato{
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 5%;
+    align-items: center;
+}
+
+#divContato{
+    margin-left: 25%;
+    margin-right: 15%;
+    margin-bottom: 5%;
+    align-items: center;
+}
+
+#imgEmailContato{
+    margin-left: 25%;
+    margin-bottom: 3%;
+}
+
+#imgWppContato{
+    margin-left: 14%;
+    margin-bottom: 3%;
+}
+
+#bottonContatoEnviar{
+    margin-right: 0%;
+    text-align: right;
+}
+
+#formas_pagamento{
+    color: red;
+}
+
